@@ -1,9 +1,14 @@
 # nagesen
   Tipping YouTube Live (superchat) randamly.
 
-  ©︎ u_sho, NS
+  ©︎ u_sho, s nitta
 
 ## How to set up
+  0.  before
+  ```
+  cd vuesplash
+  ```
+
   1.  your first time (or when add packeges)
   ```
   composer install
@@ -11,7 +16,6 @@
   
   2.  only your fist time
   ```
-  cd vuesplash
   cp .env.example .env
   php artisan key:generate
   ```
