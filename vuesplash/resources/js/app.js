@@ -1,6 +1,6 @@
 import Vue from "vue";
+import router from "./routes";
 
 new Vue({
-    el: "#app",
-    template: "<h1>Hello world</h1>"
-});
+    router
+}).$mount("#app");
