@@ -1,14 +1,14 @@
 <template>
-  <div id="signin">
-    <h2>サインイン</h2>
- 
+  <b-container>
+    <b-card bg-variant="dark" text-variant="white" title="Signin">
+  <div id="signin" class="m-5">
     <!-- emailとpasswordの入力欄 
     <input type="email" placeholder="email" v-model="email">
     <input type="password" placeholder="Password" v-model="password">
     -->
 
 　　 <!-- googleのアカウントでサインイン。アカウントがなければ新規に作成されます。 -->
-    <button @click="signInWithGoogle">Googleアカウントでサインイン</button>
+    <b-button variant="primary" @click="signInWithGoogle">Googleアカウントでサインイン</b-button>
  
 　　<!-- サインアップページ遷移ボタン 
     <p>
@@ -16,6 +16,8 @@
       <router-link to="/signup">新規作成</router-link>
     </p>-->
   </div>
+  </b-card>
+  </b-container>
 </template>
 
 <script>
