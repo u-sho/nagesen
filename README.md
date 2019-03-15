@@ -34,4 +34,8 @@
   ```
   php artisan serve
   ```
-  check http://localhost:8000/nagesen/index
+  and the on other bash
+  ```
+  ./ngrok http 8000
+  ```
+  check http://YOUR_NGROK_DOMAIN.io/nagesen/login
