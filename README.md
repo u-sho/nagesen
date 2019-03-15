@@ -1,7 +1,7 @@
 # nagesen
   Tipping YouTube Live (superchat) randamly.
 
-  ©︎ u_sho, s nitta
+  ©︎ u-sho, s-nitta4
 
 ## How to set up
   0.  before
