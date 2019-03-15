@@ -10,11 +10,11 @@
 　　 <!-- googleのアカウントでサインイン。アカウントがなければ新規に作成されます。 -->
     <button @click="signInWithGoogle">Googleアカウントでサインイン</button>
  
-　　<!-- サインアップページ遷移ボタン -->
+　　<!-- サインアップページ遷移ボタン 
     <p>
       アカウントをお持ちではない方
       <router-link to="/signup">新規作成</router-link>
-    </p>
+    </p>-->
   </div>
 </template>
 
