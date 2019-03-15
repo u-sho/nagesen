@@ -38,4 +38,4 @@
   ```
   ./ngrok http 8000
   ```
-  check http://YOUR_NGROK_DOMAIN.io/nagesen/login
+  check https://YOUR_NGROK_DOMAIN.io/nagesen/login
