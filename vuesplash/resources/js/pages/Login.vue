@@ -1,42 +1,48 @@
 <template>
-<div id="container">
-<h1>loginpage</h1>
-<GoogleLogin :client_id="client_id" :onSuccess="onSuccess" :onFailure="onFailure">Login</GoogleLogin>
-</div>
-</template>
-<script>
-  import GoogleLogin from "vue-google-login"
-  import { web } from "./../googleids/credentials.json"
-  export default {
-    data() {
-      return {
-        client_id: web.client_id,
-      }
-    },
-    methods: {
-      /* onSignIn(googleUser) {
-        //Useful data for your client-side scripts:
-        var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
-        console.log("Image URL: " + profile.getImageUrl());
-        console.log("Email: " + profile.getEmail());
+  <div id="signin">
+    <h2>サインイン</h2>
+ 
+    <!-- emailとpasswordの入力欄 
+    <input type="email" placeholder="email" v-model="email">
+    <input type="password" placeholder="Password" v-model="password">
+    -->
 
-        // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-        console.log("ID Token: " + id_token);
-       }
-       
-        onSuccess(googleUser) {
-          console.log(googleUser);
-          console.log(googleUser.getBasicProfile());
-        },
-        onFailure() {
-          return false;
-        }*/
+　　 <!-- googleのアカウントでサインイン。アカウントがなければ新規に作成されます。 -->
+    <button @click="signInWithGoogle">Googleアカウントでサインイン</button>
+ 
+　　<!-- サインアップページ遷移ボタン -->
+    <p>
+      アカウントをお持ちではない方
+      <router-link to="/signup">新規作成</router-link>
+    </p>
+  </div>
+</template>
+
+<script>
+import firebase from "firebase";
+//import { web } from "./../googleids/credentials.json"
+export default {
+  name: "Login",
+  data() {
+    return {
+      email: "",
+      password: ""
+    }
+  },
+  methods: {
+    signInWithGoogle: function() {
+      const provider = new firebase.auth.GoogleAuthProvider();
+      firebase
+        .auth()
+        .signInWithPopup(provider)
+        .then(user => {
+          this.$router.push("/nagesen/main");
+        }).catch(
+          error => {
+            alert(error.message)
+          }
+        )
     }
   }
-    
-  </script>
+}
+</script>

@@ -25,6 +25,7 @@
         "vue-template-compiler": "^2.6.3"
     },
     "dependencies": {
+        "firebase": "^5.9.0",
         "vue-header": "^1.0.0"
     }
 }
