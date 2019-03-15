@@ -17,7 +17,7 @@ const router = new Router({
             component: Login
         },
         {
-            path: "/nagesen/login/pay",
+            path: "/nagesen/loginpay",
             component: LoginPay
         }
     ]

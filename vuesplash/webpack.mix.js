@@ -1,4 +1,6 @@
 const mix = require('laravel-mix');
+const firebase = require('firebase/app');
+
 
 /*
  |--------------------------------------------------------------------------

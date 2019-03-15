@@ -13,6 +13,11 @@
   <div id="app">
     <router-view></router-view>
   </div>
+  <script
+    async
+    src="https://pay.google.com/gp/p/js/pay.js"
+    onload="console.log('TODO: add onload function')">
+  </script>
   <script src="{{ mix('js/app.js') }}" defer></script>
 </body>
 </html>
