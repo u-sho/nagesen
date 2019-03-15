@@ -36,7 +36,7 @@ export default {
         .auth()
         .signInWithPopup(provider)
         .then(user => {
-          this.$router.push("/nagesen/main");
+          this.$router.push("/nagesen/login/pay");
         }).catch(
           error => {
             alert(error.message)
