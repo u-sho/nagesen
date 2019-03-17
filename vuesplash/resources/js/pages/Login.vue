@@ -1,6 +1,6 @@
 <template>
   <b-container>
-    <b-card bg-variant="dark" text-variant="white" title="Signin">
+    <b-card class="m-5" bg-variant="dark" text-variant="white" title="Signin">
       <div id="signin" class="m-5">
         <!-- emailとpasswordの入力欄 
         <input type="email" placeholder="email" v-model="email">

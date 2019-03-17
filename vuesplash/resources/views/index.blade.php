@@ -10,6 +10,7 @@
   <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+  <h1> SuperSuperChat </h1>
   <div id="app">
     <router-view></router-view>
   </div>

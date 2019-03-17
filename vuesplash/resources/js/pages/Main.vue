@@ -1,7 +1,8 @@
 <template>
     <b-container>
-        <youtube :video-id="videoId" ref="youtube" @playing="playing"></youtube>
-        <button @click="playVideo">play</button>
+        <youtube :video-id="videoId" ref="youtube" @playing="playing" class="m-5"></youtube>
+        <button @click="playVideo" style="width=50px;"><img src="/src/Gpay.png"></button>
+        <p>ボタンを押しても大丈夫</p>
     </b-container>
 </template>
 
@@ -85,3 +86,8 @@ export default {
 }
 </script>
 
+<style scoped>
+.container {
+    background-color: #343a40;
+}
+</style>
