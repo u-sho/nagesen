@@ -4,11 +4,6 @@
   ©︎ u-sho, s-nitta4
 
 ## How to set up
-  0.  before
-  ```
-  cd vuesplash
-  ```
-
   1.  your first time (or when add packeges)
   ```
   composer install
